@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+  <script src="{{ STATIC_URL }}js/jquery.js"></script>
+  <script src="{{ STATIC_URL }}js/loginForm.js"></script>
+</head>
+<body>
+  <div id="loginform">
+    <form action="" method="POST">
+      <div id="usernameGroup">
+        <label>账户名称</label>
+        <input id="username" name="username" type="text">
+      </div>
+      <div id="passwordGroup">
+        <label>账户密码</label>
+        <input id="password" name="password" type="text">
+      </div>
+    </form>
+    <div id="submitGroup">
+      <button id="loginButton">login</button>
+    </div>
+  </div>
+</body>
+</html>

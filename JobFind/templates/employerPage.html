@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+  <title>个人主页</title>
+</head>
+<body>
+  <div id="sidebar">
+    <ul>
+      <li><span>我的职位</span></li>
+      <li><span>个人资料</span></li>
+      <li><span>修改密码</span></li>
+      <li><span>职位发布</span></li>
+    </ul>
+  </div>
+  <div id="content">
+    <ul>
+      {% for each in joblist %}
+      <li>
+        <h3>{{ job.discrebtion }}</h3>
+        <p>店家：{{ job.employer.name }}</p>
+        <p>人数：{{ job.total_num }}</p>
+        <p>城市：{{ job.employer.address.city }}</p>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+</body>
+</html>
